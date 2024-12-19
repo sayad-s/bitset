@@ -6,7 +6,7 @@ class Bitset {
     }
 
     setBit(pos, val) {
-        if (pos >= this.maxPos) {
+        if (pos > this.maxPos) {
             return this;
         }
         if (val !== 0 && val !== 1) {
@@ -24,7 +24,7 @@ class Bitset {
     }
 
     getPos(pos) {
-        if (pos >= this.maxPos) {
+        if (pos > this.maxPos) {
             return this;
         }
         
